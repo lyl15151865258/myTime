@@ -1,0 +1,16 @@
+import org.gradle.api.initialization.resolve.RepositoriesMode
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        // 1.添加MobSDK Maven地址
+        maven {url "https://mvn.mob.com/android"}
+    }
+}
+rootProject.name = "myTime"
+include ':app'
+include ':wheelview'
+include ':pickerview'

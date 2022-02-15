@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_6"
+    android:orientation="vertical">
+
+    <com.liyuliang.mytime.widget.MyToolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:titleText="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.liyuliang.mytime.widget.textview.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/eventName"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_18" />
+
+                        <com.liyuliang.mytime.widget.textview.MyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:padding="@dimen/dp_5"
+                            android:text="@string/choose"
+                            android:textColor="@color/colorGreenPrimary"
+                            android:textSize="@dimen/sp_14" />
+
+                    </LinearLayout>
+
+                    <com.liyuliang.mytime.widget.MyEditText
+                        android:id="@+id/etEventName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@drawable/border_white"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/calendarType"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.liyuliang.mytime.widget.textview.SwitchView
+                        android:id="@+id/switchview"
+                        android:layout_width="@dimen/dp_90"
+                        android:layout_height="@dimen/dp_30"
+                        app:leftColor="@color/colorGreenPrimary"
+                        app:rightColor="@color/colorGreenPrimary"
+                        app:textLeft="公历"
+                        app:textLeftClickColor="@color/white"
+                        app:textLeftColor="@color/black"
+                        app:textRight="农历"
+                        app:textRightClickColor="@color/white"
+                        app:textRightColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eventTime"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:id="@+id/tvDatetime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eventRepeat"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:id="@+id/tvEventRepeat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eventReminder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:id="@+id/tvEventReminder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:paddingEnd="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_5">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/selectWallpaper"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivWallpaper"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/stickyEvent"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/scSticky"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_20"
+                        android:background="@drawable/check_switch"
+                        android:button="@null"
+                        app:theme="@style/switchStyle"
+                        app:thumbTint="#00000000"
+                        app:trackTint="#00000000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/gray_7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <com.liyuliang.mytime.widget.textview.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eventRemark"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_18" />
+
+                    <com.liyuliang.mytime.widget.MyEditText
+                        android:id="@+id/etEventRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@drawable/border_white"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:minLines="5"
+                        android:padding="@dimen/dp_5"
+                        android:textSize="@dimen/sp_16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+plugins {
+    id 'com.android.application'
+    id 'com.mob.sdk'
+}
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.liyuliang.mytime"
+        minSdk 21
+        targetSdk 31
+        versionCode 20211224
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+        release {
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable "ResourceType"
+    }
+
+    buildTypes {
+        debug {
+            // 是否支持调试
+            debuggable true
+            // 是否支持jni调试
+            jniDebuggable true
+            // 代码压缩
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            // 是否支持Zipalign优化
+            zipAlignEnabled true
+            // 是否支持本地化整理
+            pseudoLocalesEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //打签名包时，需要添加此设置
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // 是否支持调试
+            debuggable true
+            // 是否支持jni调试
+            jniDebuggable true
+            // 代码压缩
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            // 是否支持Zipalign优化
+            zipAlignEnabled true
+            // 是否支持本地化整理
+            pseudoLocalesEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //打签名包时，需要添加此设置
+            signingConfig signingConfigs.release
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "MyTime_${variant.versionName}.apk"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey keystoreProperties['AppKey_MobSDK']
+    appSecret keystoreProperties['AppSecret_MobSDK']
+    permissions {
+        exclude "android.permission.READ_SMS"
+    }
+    SMSSDK {
+        //默认使用GUI，若不使用GUI，通过以下开关关闭
+        //gui false
+        //若使用GUI的自动填充验证码功能，需打开此设置
+        //autoSMS true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.exifinterface:exifinterface:1.3.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //注解
+    implementation 'org.jetbrains:annotations:23.0.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.3.1'
+    //Json解析
+    implementation 'com.google.code.gson:gson:2.8.9'
+    //okhttp、retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+    //rxjava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    // 圆形ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // zxing二维码
+    implementation 'com.google.zxing:core:3.4.1'
+    // 申请权限
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    // 汉字转拼音
+    implementation 'com.belerweb:pinyin4j:2.5.1'
+    // 腾讯X5内核
+    implementation 'com.tencent.tbs:tbssdk:44136'
+    implementation 'io.github.youth5201314:banner:2.2.2'
+}

@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">时间管理大师</string>
+    <string name="start_use">开始使用</string>
+    <string name="countdown">倒计时</string>
+    <string name="anniversary">纪念日</string>
+    <string name="schedule">日程表</string>
+    <string name="addCountdown">新增倒计时</string>
+    <string name="addAnniversary">新增纪念日</string>
+    <string name="addSchedule">新增日程表</string>
+    <string name="settings">设置</string>
+    <string name="save">保存</string>
+
+    <string name="click_again_exit">再按一次退出程序</string>
+    <string name="loading">加载中…</string>
+    <string name="remote_login">您的账号已在其他设备登录</string>
+    <string name="Exit">退出</string>
+    <string name="LoginAgain">重新登录</string>
+
+    <string name="InputPassword">输入密码（6&#8211;20位）</string>
+    <string name="ForgetPassword">忘记密码</string>
+    <string name="SMSVerificationCode">短信验证码</string>
+    <string name="GetVerificationCode">获取验证码</string>
+    <string name="resend_info_time">重新发送(%ds)</string>
+    <string name="NewUserRegister">注册账号</string>
+    <string name="HaveAccount">已有账号</string>
+    <string name="ReadRegisterProtocol">注册即同意用户注册协议</string>
+    <string name="Login">登录</string>
+    <string name="Register">注册</string>
+    <string name="RegistrationProtocol">用户注册协议</string>
+
+    <string name="SetHeadPortrait">设置头像</string>
+    <string name="UploadHeadPortrait">请上传头像</string>
+    <string name="NetworkUnavailable">当前网络不可用，请检查网络</string>
+    <string name="uploading">上传中</string>
+    <string name="UploadSuccess">上传成功</string>
+    <string name="UnknownError">未知错误，上传失败</string>
+    <string name="CutError">无法剪切选择的图片</string>
+    <string name="EnterPhoneNumber">请输入手机号</string>
+    <string name="EnterPassword">请输入密码</string>
+    <string name="LessThanSixDigits">密码长度小于6位</string>
+    <string name="LoggingIn">登录中</string>
+    <string name="Registering">注册中</string>
+    <string name="RegisterFailed">注册失败</string>
+    <string name="RegisteredSuccess">注册成功</string>
+    <string name="updating">更新中</string>
+    <string name="UpdateSuccess">更新成功</string>
+    <string name="UpdateFailed">更新失败</string>
+
+    <string name="camera_pop_camera">相机拍摄</string>
+    <string name="camera_pop_album">从相册选取</string>
+    <string name="permission_title_rationale">权限需求</string>
+    <string name="permission_read_storage_rationale">选择图片时需要读取权限</string>
+    <string name="permission_write_storage_rationale">拍照时需要存储权限</string>
+
+    <string name="reminder">友情提示</string>
+    <string name="Cancel">取消</string>
+    <string name="Continue">继续</string>
+
+    <string name="BasicSettings">基础设置</string>
+    <string name="AccountInformation">账号信息</string>
+    <string name="LanguageSettings">语言设置</string>
+    <string name="VersionAndShare">版本与分享</string>
+    <string name="VersionView">版本查看</string>
+    <string name="VersionUpdate">版本更新</string>
+    <string name="ContactUs">联系我们</string>
+    <string name="Logout">退出登录</string>
+    <string name="ShareToOthers">分享给他人</string>
+    <string name="ChangeAccount">切换账号</string>
+    <string name="LoginAccount">登录账号</string>
+
+
+    <string name="OldPassword">请输入旧密码</string>
+    <string name="NewPassword">请输入新密码（6&#8211;20位）</string>
+    <string name="ConfirmNewPassword">请再次输入新密码（6&#8211;20位）</string>
+    <string name="RetrievePassword">找回密码</string>
+    <string name="CanNotGetTheVerificationCode">获取不到验证码？</string>
+    <string name="Confirm">确认</string>
+
+    <string name="VersionCode">版本号</string>
+    <string name="update_version">版本升级（%1$s）</string>
+    <string name="file_size_m" translatable="false">%1$sM</string>
+    <string name="QrCodeShare">我的专属分享二维码</string>
+    <string name="ShareTo">分享到</string>
+    <string name="GeneratingQRCode">二维码生成中</string>
+    <string name="VersionCodeNo">版  本  号</string>
+    <string name="ReleaseTime">发布时间</string>
+    <string name="UpdateLog">更新日志</string>
+    <string name="Searching">查询中&#8230;</string>
+    <string name="warning_redownload">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您已经下载过该版本文件，是否直接安装？</string>
+    <string name="warning_delete_rule">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将删除该考勤规则，删除后不可恢复，是否继续删除？</string>
+    <string name="warning_delete_face">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将删除该人脸特征信息和相应的照片，删除后您可能无法使用人脸识别门禁、考勤以及APP登录，是否继续删除？</string>
+    <string name="warning_leave_early">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;下班时间还没到，现在打卡会算您早退，确定要打卡吗？</string>
+    <string name="warning_delete_history">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将删除该条搜索记录，是否继续删除？</string>
+    <string name="warning_delete_history_all">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将删除所有历史搜索记录，是否继续删除？</string>
+    <string name="warning_delete_application">"&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将撤销该条申请，撤销后不可恢复，是否继续撤销？</string>
+    <string name="warning_empty_mail_address">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您还没有设置邮箱地址，是否立刻设置？</string>
+    <string name="CurrentVersion">当前版本</string>
+    <string name="LatestVersion">最新版本：</string>
+    <string name="Later">以后再说</string>
+    <string name="UpdateNow">现在更新</string>
+    <string name="DownloadAgain">重新下载</string>
+    <string name="InstallDirectly">直接安装</string>
+    <string name="Downloaded">已下载：</string>
+    <string name="TotalSize">总大小</string>
+    <string name="YourAppIsTheLatestVersion">您的软件是最新版本</string>
+
+    <string name="Name">姓名</string>
+    <string name="Gender">性别</string>
+    <string name="Position">职务</string>
+    <string name="ModifyGender">修改性别</string>
+    <string name="ConfirmModification">确认修改</string>
+
+    <string name="ChooseLanguage">语言选择</string>
+    <string name="lan_default">跟随系统</string>
+    <string name="lan_chinese" translatable="false">简体中文</string>
+    <string name="lan_chinese_taiwan" translatable="false">繁體中文</string>
+    <string name="lan_en" translatable="false">English</string>
+    <string name="lan_ja" translatable="false">日本語</string>
+
+    <string name="SaveToGallerySuccessfully">图片已保存到相册</string>
+    <string name="LongPressToSave">（长按图片保存到相册）</string>
+
+    <string name="ProfilePhoto">头像</string>
+    <string name="PhoneNumber">手机号码</string>
+    <string name="ChangePassword">密码修改</string>
+    <string name="RegisterTime">注册时间</string>
+
+
+    <string name="NameOrDepartment">姓名/电话/部门/职位</string>
+
+    <string name="contact">联系电话:+86 0512&#8211;66261935 联系地址:苏州市高新区竹园路209号苏州创业园4幢1310室 版权所有 © 中本硕机电工程有限公司 2019</string>
+
+    <!--SharedPreferences引用，无需翻译-->
+    <string name="language" translatable="false">language</string>
+
+
+    <string name="all_photos">全部图片</string>
+    <string name="pages_photos">%1$d张</string>
+    <string name="msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="determine">确定</string>
+    <string name="current_of_all" translatable="false">%1$d/%2$d</string>
+
+    <string name="file_select_error_tips">获取文件信息出错</string>
+    <string name="file_select_no_select">没有选择任何文件</string>
+    <string name="file_select_max_select">最多选择%d个文件</string>
+
+    <string name="WebPage">网页</string>
+    <string name="CropImage">图片裁剪</string>
+    <string name="SkipAd">跳过（%1ds）</string>
+    <string name="QuickLogin">快捷登录</string>
+    <string name="warning_request_permission">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;为了软件的正常运行，我们需要申请以下权限：相机、通讯录、存储、位置，请在稍后的弹窗中授予权限，否则软件将不能使用，谢谢配合！</string>
+    <string name="GrantedAllPermissions">太棒了，您已授予所有权限</string>
+    <string name="warning_to_setting_permission">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;由于您拒绝了部分必要权限，软件将无法正常运行，请您到设置页面后授予所有权限，谢谢配合！</string>
+    <string name="warning_exit">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;您将要退出登录，是否继续？</string>
+
+
+    <string name="SelectImageOrDocument">选择图片或文档</string>
+    <string name="SelectFile">选择文件</string>
+    <string name="Phone">电话</string>
+    <string name="Mail">邮箱</string>
+    <string name="SetMailbox">设置邮箱</string>
+    <string name="SetName">设置姓名</string>
+    <string name="SetPhoneNumber">设置电话</string>
+    <string name="Finish">完成</string>
+
+
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+
+    <string name="CreateQrCodeFailed">创建二维码失败，请重试</string>
+
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载…</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="loading_done">加载完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="eventName">事件名称</string>
+    <string name="calendarType">日历类别</string>
+    <string name="eventTime">事件时间</string>
+    <string name="eventRepeat">事件重复</string>
+    <string name="eventReminder">事件提醒</string>
+    <string name="selectWallpaper">选择壁纸</string>
+    <string name="stickyEvent">置顶事件</string>
+    <string name="eventRemark">事件备注</string>
+    <string name="choose">选择</string>
+
+</resources>

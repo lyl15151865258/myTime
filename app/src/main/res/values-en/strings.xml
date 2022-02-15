@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Time Master</string>
+    <string name="click_again_exit">Press again to exit.</string>
+    <string name="loading">Loading…</string>
+    <string name="remote_login">Your account is already logged in on another device</string>
+    <string name="Exit">Exit</string>
+    <string name="LoginAgain">Login again</string>
+
+    <string name="InputPassword">Enter password (6&#8211;20 digits)</string>
+    <string name="ForgetPassword">Forget password</string>
+    <string name="SMSVerificationCode">verification code</string>
+    <string name="GetVerificationCode">Get code</string>
+    <string name="resend_info_time">Resend(%ds)</string>
+    <string name="NewUserRegister">Create an account</string>
+    <string name="HaveAccount">Login</string>
+    <string name="ReadRegisterProtocol">Registration agrees to the User Registration Agreement</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="RegistrationProtocol">User Registration Agreement</string>
+
+    <string name="SetHeadPortrait">Set head portrait</string>
+    <string name="UploadHeadPortrait">Please upload a head portrait</string>
+    <string name="NetworkUnavailable">The current network is not available, please check the network</string>
+    <string name="uploading">Uploading</string>
+    <string name="UploadSuccess">Upload successful</string>
+    <string name="UnknownError">Unknown error, upload failed</string>
+    <string name="CutError">Unable to cut selected image</string>
+    <string name="EnterPhoneNumber">Please type in your phone number</string>
+    <string name="EnterPassword">Please type in your password</string>
+    <string name="LessThanSixDigits">Password length is less than 6 digits</string>
+    <string name="LoggingIn">Logging in</string>
+    <string name="Registering">Registering</string>
+    <string name="RegisterFailed">Registration failed</string>
+    <string name="RegisteredSuccess">Registration success</string>
+    <string name="updating">Updating</string>
+    <string name="UpdateSuccess">Update completed</string>
+    <string name="UpdateFailed">Update failed</string>
+
+    <string name="camera_pop_camera">Camera shooting</string>
+    <string name="camera_pop_album">Select from album</string>
+    <string name="permission_title_rationale">Permission requirements</string>
+    <string name="permission_read_storage_rationale">Requires read permission when selecting images</string>
+    <string name="permission_write_storage_rationale">Requires storage permission when taking photos</string>
+
+    <string name="Cancel">Cancel</string>
+    <string name="Continue">Continue</string>
+
+    <string name="AccountInformation">Account information</string>
+    <string name="LanguageSettings">Language settings</string>
+    <string name="VersionAndShare">Version and sharing</string>
+    <string name="VersionUpdate">Version update</string>
+    <string name="ContactUs">Contact us</string>
+    <string name="Logout">Sign out</string>
+    <string name="ShareToOthers">Share to others</string>
+    <string name="ChangeAccount">Switch account</string>
+
+    <string name="OldPassword">Please enter the original password</string>
+    <string name="NewPassword">Please enter your new password (6&#8211;20 digits)</string>
+    <string name="ConfirmNewPassword">Please enter your new password again (6&#8211;20 digits)</string>
+    <string name="RetrievePassword">Retrieve password</string>
+    <string name="CanNotGetTheVerificationCode">Can\'t get the verification code?</string>
+    <string name="Confirm">Confirm</string>
+
+    <string name="VersionCode">Version Code</string>
+    <string name="VersionView">Version view</string>
+    <string name="update_version">Version upgrade（%1$s）</string>
+    <string name="QrCodeShare">My exclusive share QR code</string>
+    <string name="ShareTo">Share to</string>
+    <string name="GeneratingQRCode">Generating QR code</string>
+    <string name="VersionCodeNo">Version number</string>
+    <string name="ReleaseTime">Release time</string>
+    <string name="UpdateLog">Update log</string>
+    <string name="Searching">Querying&#8230;</string>
+    <string name="warning_redownload">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;You have already downloaded this version of the file, is it installed directly?</string>
+    <string name="warning_delete_rule">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;You will delete the attendance rule, it cannot be recovered after deletion, and will it continue to delete?</string>
+    <string name="warning_delete_face">        You will delete the face feature information and the corresponding photo. After deleting, you may not be able to use face recognition access control, attendance and APP login. Continue to delete?</string>
+    <string name="warning_leave_early">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;It\'s not time to go off work yet, are you sure to sign off?</string>
+    <string name="CurrentVersion">Current version</string>
+    <string name="LatestVersion">Latest version：</string>
+    <string name="Later">Later</string>
+    <string name="UpdateNow">Update now</string>
+    <string name="DownloadAgain">Download again</string>
+    <string name="InstallDirectly">Direct installation</string>
+    <string name="Downloaded">Downloaded：</string>
+    <string name="TotalSize">Total size</string>
+    <string name="YourAppIsTheLatestVersion">Your application is the latest version</string>
+
+    <string name="Name">Name</string>
+    <string name="Gender">Gender</string>
+    <string name="Position">Position</string>
+    <string name="ModifyGender">Modify gender</string>
+    <string name="ConfirmModification">Confirm the changes</string>
+
+    <string name="ChooseLanguage">Choose language</string>
+    <string name="lan_default">Follow system</string>
+
+    <string name="SaveToGallerySuccessfully">Image has been saved to album</string>
+    <string name="LongPressToSave">(long press the image to save to album)</string>
+
+    <string name="ProfilePhoto">Head portrait</string>
+    <string name="PhoneNumber">Phone number</string>
+    <string name="ChangePassword">Change Password</string>
+
+
+    <string name="NameOrDepartment">Name / Phone / Department / Position</string>
+
+    <string name="contact">Tel: +86 0512&#8211;66261935\nAddress: Room 1310, Building 4, Suzhou Pioneer Park, No. 209 Zhuyuan Road, High-tech Zone, Suzhou, China\nCopyright © Zhongben Shuo Electromechanical Engineering Co., Ltd. 2019</string>
+
+    <!--SharedPreferences引用，无需翻译-->
+
+
+    <string name="all_photos">All photos</string>
+    <string name="pages_photos">%1$d pages</string>
+    <string name="msg_maxi_capacity">The photo selection limit has been reached</string>
+    <string name="take_photo">Take photo</string>
+    <string name="determine">Determine</string>
+
+    <string name="Finish">Finish</string>
+    <string name="SelectFile">Select the file</string>
+    <string name="SetMailbox">Set mailbox</string>
+    <string name="SetName">Set name</string>
+    <string name="SetPhoneNumber">Set up the phone</string>
+    <string name="WebPage">Web page</string>
+    <string name="file_select_error_tips">Error getting file information</string>
+    <string name="file_select_max_select">Select up to %d files</string>
+    <string name="file_select_no_select">No files selected</string>
+    <string name="settings">Settings</string>
+    <string name="CreateQrCodeFailed">Failed to create QR code, please try again</string>
+    <string name="Phone">Phone</string>
+    <string name="Mail">E-mail</string>
+
+    <string name="warning_delete_history">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;You will delete this search history, will you continue to delete it?</string>
+    <string name="warning_delete_history_all">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;You will delete all historical search records, will you continue to delete them?</string>
+
+    <string name="SelectImageOrDocument">Select an image or document</string>
+    <string name="CropImage">Crop image</string>
+    <string name="SkipAd">Skip（%1ds）</string>
+    <string name="QuickLogin">Quick login</string>
+    <string name="schedule">Schedule</string>
+    <string name="warning_request_permission">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;For the normal operation of the software, we need to apply for the following permissions: camera, address book, storage, location, please grant permission in the pop-up window later, otherwise the software will not be used, thank you!</string>
+    <string name="GrantedAllPermissions">Great, you have granted all permissions</string>
+    <string name="warning_to_setting_permission">        Since you refused some of the necessary permissions, the software will not work properly. Please grant all permissions after setting the page, thank you for your cooperation!</string>
+
+
+    <string name="listview_header_hint_normal">pull to refresh</string>
+    <string name="listview_header_hint_release">release to start refresh</string>
+    <string name="listview_loading">loading…</string>
+    <string name="nomore_loading">no more to be loaded</string>
+    <string name="refreshing">refreshing…</string>
+    <string name="refresh_done">refresh done</string>
+    <string name="loading_done">loading done</string>
+    <string name="listview_header_last_time">last update：</string>
+    <string name="start_use">Start</string>
+
+</resources>

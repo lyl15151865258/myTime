@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liyuliang.mytime">
+
+    <!-- 设置网络等权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 读取手机信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 避免Android8.0安装APK时提示解析安装包错误 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name="com.liyuliang.mytime.MyTimeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/GreenTheme">
+
+        <!-- 解决谷歌GooglePlay Services的bug，报错内容：java.lang.NoClassDefFoundError:failed resolution of :Lorg/apache/http/ProtocolVersion -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!-- 适配全面屏，屏幕最大高宽比设置为2.4 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- 用于结合SharedPreferences使用的跨进程数据共享 -->
+        <provider
+            android:name=".contentprovider.SPContentProvider"
+            android:authorities="com.liyuliang.mytime"
+            android:exported="false"
+            android:process=":provider" />
+
+        <activity
+            android:name=".activity.loginregister.LogoActivity"
+            android:configChanges="locale"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 引导页面 -->
+        <activity
+            android:name=".activity.loginregister.GuideActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 登录注册页面 -->
+        <activity
+            android:name=".activity.loginregister.LoginRegisterActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 头像设置页面 -->
+        <activity
+            android:name=".activity.loginregister.ChooseHeadPortraitActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 重设密码页面 -->
+        <activity
+            android:name=".activity.loginregister.ResetPasswordActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 找回密码页面 -->
+        <activity
+            android:name=".activity.loginregister.RetrievePasswordActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 主页面 -->
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 通用Html页面 -->
+        <activity
+            android:name=".activity.normal.HtmlActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 账号设置页面 -->
+        <activity
+            android:name=".activity.settings.AccountInfoActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 联系我们页面 -->
+        <activity
+            android:name=".activity.settings.ContactUsActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!--邮箱设置页面 -->
+        <activity
+            android:name=".activity.settings.SetEmailActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!--性别设置页面 -->
+        <activity
+            android:name=".activity.settings.SetGenderActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 语言设置页面 -->
+        <activity
+            android:name=".activity.settings.SetLanguageActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 手机号设置页面 -->
+        <activity
+            android:name=".activity.settings.SetPhoneNumberActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 姓名设置页面 -->
+        <activity
+            android:name=".activity.settings.SetUserNameActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 历史版本页面 -->
+        <activity
+            android:name=".activity.version.VersionsActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!-- 二维码分享页面 -->
+        <activity
+            android:name=".activity.version.QrCodeShareActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!--照片裁剪页面 -->
+        <activity
+            android:name=".activity.normal.CropActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+
+        <!--通用新增页面 -->
+        <activity
+            android:name=".activity.main.AddActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateUnchanged|adjustResize|stateHidden" />
+
+    </application>
+
+</manifest>
